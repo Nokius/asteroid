@@ -5,7 +5,7 @@ AsteroidOS build system
 
 You can fully build a flashable image from source with the following commands, but be careful it will take several hours:
 
-    . ./prepare-build.sh
+    . ./prepare-build.sh <codename of your watch>
     bitbake asteroid-image
 
 For more information report to [the documentation](https://asteroidos.org/wiki/documentation/).
