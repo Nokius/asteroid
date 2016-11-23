@@ -43,17 +43,8 @@ fi
 if [ ! -d src/meta-qt5 ] ; then
     git clone -b krogoth https://github.com/meta-qt5/meta-qt5.git src/meta-qt5
 fi
-if [ ! -d src/meta-sparrow-hybris ] ; then
-    git clone https://github.com/AsteroidOS/meta-sparrow-hybris src/meta-sparrow-hybris
-fi
-if [ ! -d src/meta-tetra-hybris ] ; then
-    git clone https://github.com/AsteroidOS/meta-tetra-hybris src/meta-tetra-hybris
-fi
-if [ ! -d src/meta-bass-hybris ] ; then
-    git clone https://github.com/AsteroidOS/meta-bass-hybris src/meta-bass-hybris
-fi
-if [ ! -d src/meta-dory-hybris ] ; then
-    git clone https://github.com/AsteroidOS/meta-dory-hybris src/meta-dory-hybris
+if [ ! -d src/meta-$MACHINE-hybris ] ; then
+    git clone https://github.com/AsteroidOS/meta-$MACHINE-hybris src/meta-$MACHINE-hybris
 fi
 
 # Create local.conf and bblayers.conf on first run
